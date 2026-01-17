@@ -1,0 +1,70 @@
+/home/kusha/workspace/projects/AIML/MyProjects/deals_processor/src/deals_processor/main.py:152: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+/home/kusha/workspace/projects/AIML/MyProjects/deals_processor/src/deals_processor/main.py:164: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("shutdown")
+INFO:     Will watch for changes in these directories: ['/home/kusha/workspace/projects/AIML/MyProjects/deals_processor']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [11355] using WatchFiles
+2026-01-16 05:39:55,410 - deals_processor.main - INFO - main.py:127 - API routers registered
+2026-01-16 05:39:55,411 - deals_processor.main - INFO - main.py:60 - FastAPI application created: Deals Processor API v0.1.0
+2026-01-16 05:39:55,411 - uvicorn.error - INFO - Started server process [11366]
+2026-01-16 05:39:55,411 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-16 05:39:55,420 - deals_processor.core.database - INFO - database.py:35 - Database initialized: sqlite:///./deals_processor.db
+2026-01-16 05:39:55,420 - deals_processor.core.database - INFO - database.py:84 - Initializing database tables...
+2026-01-16 05:39:55,785 - deals_processor.core.database - INFO - database.py:86 - Database tables created successfully
+2026-01-16 05:39:55,785 - deals_processor.main - INFO - main.py:158 - Database initialized successfully
+2026-01-16 05:39:55,785 - deals_processor.main - INFO - main.py:162 - Application startup complete
+2026-01-16 05:39:55,785 - uvicorn.error - INFO - Application startup complete.
+2026-01-16 05:40:02,714 - uvicorn.access - INFO - 127.0.0.1:53306 - "GET /docs HTTP/1.1" 200
+2026-01-16 05:40:10,411 - deals_processor.api.auth - INFO - auth.py:74 - Registration attempt for email: user1@example.com
+2026-01-16 05:40:10,703 - deals_processor.api.auth - INFO - auth.py:85 - User registered successfully: user1@example.com
+2026-01-16 05:40:10,703 - uvicorn.access - INFO - 127.0.0.1:32780 - "POST /auth/register HTTP/1.1" 200
+2026-01-16 05:40:18,665 - deals_processor.api.deals - INFO - deals.py:128 - Deal creation requested by user: 1
+2026-01-16 05:40:18,685 - uvicorn.access - INFO - 127.0.0.1:36116 - "POST /deals HTTP/1.1" 201
+2026-01-16 05:40:26,912 - deals_processor.api.deals - INFO - deals.py:128 - Deal creation requested by user: 1
+2026-01-16 05:40:26,930 - uvicorn.access - INFO - 127.0.0.1:39416 - "POST /deals HTTP/1.1" 201
+2026-01-16 05:40:34,395 - deals_processor.api.deals - INFO - deals.py:291 - Move deal 2 to DealStage.SCREEN by user 1
+2026-01-16 05:40:34,439 - uvicorn.access - INFO - 127.0.0.1:39432 - "POST /deals/2/move HTTP/1.1" 200
+2026-01-16 05:40:34,479 - deals_processor.api.deals - INFO - deals.py:369 - Get pipeline summary requested by user: 1
+2026-01-16 05:40:34,489 - uvicorn.access - INFO - 127.0.0.1:39444 - "GET /deals/stats/pipeline-summary HTTP/1.1" 200
+2026-01-16 05:40:47,631 - deals_processor.api.deals - INFO - deals.py:291 - Move deal 2 to DealStage.SCREEN by user 1
+2026-01-16 05:40:47,633 - uvicorn.access - INFO - 127.0.0.1:43428 - "POST /deals/2/move HTTP/1.1" 400
+2026-01-16 05:40:57,720 - deals_processor.api.deals - INFO - deals.py:128 - Deal creation requested by user: 1
+2026-01-16 05:40:57,741 - uvicorn.access - INFO - 127.0.0.1:40650 - "POST /deals HTTP/1.1" 201
+2026-01-16 05:40:57,753 - deals_processor.api.deals - INFO - deals.py:128 - Deal creation requested by user: 1
+2026-01-16 05:40:57,774 - uvicorn.access - INFO - 127.0.0.1:40654 - "POST /deals HTTP/1.1" 201
+2026-01-16 05:40:57,792 - deals_processor.api.deals - INFO - deals.py:128 - Deal creation requested by user: 1
+2026-01-16 05:40:57,812 - uvicorn.access - INFO - 127.0.0.1:40658 - "POST /deals HTTP/1.1" 201
+2026-01-16 05:40:57,852 - deals_processor.api.deals - INFO - deals.py:291 - Move deal 1 to DealStage.DILIGENCE by user 1
+2026-01-16 05:40:57,887 - uvicorn.access - INFO - 127.0.0.1:40662 - "POST /deals/1/move HTTP/1.1" 200
+2026-01-16 05:41:03,528 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 1
+2026-01-16 05:41:03,530 - uvicorn.access - INFO - 127.0.0.1:40672 - "GET /deals HTTP/1.1" 200
+2026-01-16 05:41:14,520 - deals_processor.api.deals - INFO - deals.py:399 - Get activities for deal 1 requested by user: 1
+2026-01-16 05:41:14,523 - uvicorn.access - INFO - 127.0.0.1:52358 - "GET /deals/1/activities HTTP/1.1" 200
+WARNING:  WatchFiles detected changes in 'src/deals_processor/schemas/__init__.py', 'src/deals_processor/api/deals.py', 'src/deals_processor/models/deal.py', 'src/deals_processor/repositories/deal_repository.py', 'src/deals_processor/services/deal_service.py'. Reloading...
+2026-01-16 05:42:12,408 - uvicorn.error - INFO - Shutting down
+2026-01-16 05:42:12,509 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-01-16 05:42:12,511 - deals_processor.main - INFO - main.py:170 - Database connection pool disposed
+2026-01-16 05:42:12,511 - deals_processor.main - INFO - main.py:173 - Application shutdown
+2026-01-16 05:42:12,511 - uvicorn.error - INFO - Application shutdown complete.
+2026-01-16 05:42:12,512 - uvicorn.error - INFO - Finished server process [11366]
+2026-01-16 05:42:13,120 - deals_processor.main - INFO - main.py:127 - API routers registered
+2026-01-16 05:42:13,120 - deals_processor.main - INFO - main.py:60 - FastAPI application created: Deals Processor API v0.1.0
+2026-01-16 05:42:13,120 - uvicorn.error - INFO - Started server process [12061]
+2026-01-16 05:42:13,120 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-16 05:42:13,129 - deals_processor.core.database - INFO - database.py:35 - Database initialized: sqlite:///./deals_processor.db
+2026-01-16 05:42:13,130 - deals_processor.core.database - INFO - database.py:84 - Initializing database tables...
+2026-01-16 05:42:13,131 - deals_processor.core.database - INFO - database.py:86 - Database tables created successfully
+2026-01-16 05:42:13,131 - deals_processor.main - INFO - main.py:158 - Database initialized successfully
+2026-01-16 05:42:13,131 - deals_processor.main - INFO - main.py:162 - Application startup complete
+2026-01-16 05:42:13,131 - uvicorn.error - INFO - Application startup complete.

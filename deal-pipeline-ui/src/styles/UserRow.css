@@ -1,0 +1,232 @@
+.user-row {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.user-row:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: #d0d0d0;
+}
+
+.user-row-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 180px 350px;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+}
+
+@media (max-width: 1200px) {
+  .user-row-main {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+.user-info {
+  min-width: 200px;
+}
+
+.user-email {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 4px 0;
+  word-break: break-all;
+}
+
+.user-name {
+  font-size: 13px;
+  color: #666;
+  margin: 0 0 4px 0;
+}
+
+.user-joined {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+}
+
+.user-role {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.role-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 2px solid;
+  border-radius: 6px;
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.role-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.role-label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.role-description {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+.user-status {
+  display: flex;
+  justify-content: center;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.status-badge.active {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-badge.inactive {
+  background: #f5f5f5;
+  color: #757575;
+}
+
+.user-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+button[class*="btn-"] {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+button[class*="btn-"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-role-change {
+  background: #007bff;
+  color: white;
+}
+
+.btn-role-change:hover:not(:disabled) {
+  background: #0056b3;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 87, 179, 0.3);
+}
+
+.btn-toggle {
+  padding: 6px 12px;
+  border: 1px solid #ffc107;
+  background: #fff8e1;
+  color: #f57f17;
+  border-radius: 4px;
+}
+
+.btn-toggle.activate {
+  border-color: #28a745;
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.btn-toggle.deactivate {
+  border-color: #ffc107;
+  background: #fff8e1;
+  color: #f57f17;
+}
+
+.btn-toggle:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-delete {
+  background: #f8f9fa;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+.btn-delete:hover:not(:disabled) {
+  background: #dc3545;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(220, 53, 69, 0.3);
+}
+
+.user-row-error {
+  background: #ffebee;
+  color: #c62828;
+  padding: 8px 16px;
+  font-size: 12px;
+  border-top: 1px solid #ef5350;
+}
+.role-change-container {
+  position: relative;
+  display: inline-block;
+}
+
+.role-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 4px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  min-width: 150px;
+}
+
+.role-option {
+  padding: 10px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.2s ease;
+}
+
+.role-option:last-child {
+  border-bottom: none;
+}
+
+.role-option:hover {
+  background: #f8f9fa;
+  padding-left: 16px;
+}
+
+.role-option.selected {
+  background: #e3f2fd;
+  color: #0056b3;
+  font-weight: 600;
+}

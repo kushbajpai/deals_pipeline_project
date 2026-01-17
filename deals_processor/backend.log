@@ -1,0 +1,847 @@
+2026-01-17 16:51:19,071 - uvicorn.error - INFO - Started server process [55495]
+2026-01-17 16:51:19,071 - uvicorn.error - INFO - Waiting for application startup.
+2026-01-17 16:51:19,085 - deals_processor.core.database - INFO - database.py:35 - Database initialized: sqlite:///./deals_processor.db
+2026-01-17 16:51:19,085 - deals_processor.core.database - INFO - database.py:84 - Initializing database tables...
+2026-01-17 16:51:19,089 - deals_processor.core.database - INFO - database.py:86 - Database tables created successfully
+2026-01-17 16:51:19,098 - deals_processor.core.init_data - INFO - init_data.py:29 - Default admin user already exists
+2026-01-17 16:51:19,098 - uvicorn.error - INFO - Application startup complete.
+2026-01-17 16:51:19,105 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-01-17 16:51:20,873 - uvicorn.access - INFO - 127.0.0.1:57528 - "GET /docs HTTP/1.1" 200
+2026-01-17 16:51:35,273 - deals_processor.core.security - WARNING - security.py:65 - Missing or invalid Authorization header
+2026-01-17 16:51:35,274 - uvicorn.access - INFO - 127.0.0.1:44860 - "GET /users HTTP/1.1" 401
+2026-01-17 16:52:11,654 - deals_processor.api.auth - INFO - auth.py:128 - Login attempt for email: admin@default.com
+2026-01-17 16:52:12,021 - deals_processor.api.auth - INFO - auth.py:138 - User logged in successfully: admin@default.com
+2026-01-17 16:52:12,021 - uvicorn.access - INFO - 127.0.0.1:44872 - "POST /auth/login HTTP/1.1" 200
+2026-01-17 16:52:25,729 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:52:25,735 - uvicorn.access - INFO - 127.0.0.1:50890 - "GET /users HTTP/1.1" 200
+2026-01-17 16:54:26,191 - uvicorn.access - INFO - 127.0.0.1:44858 - "GET /docs HTTP/1.1" 200
+2026-01-17 16:54:26,371 - uvicorn.access - INFO - 127.0.0.1:44858 - "GET /openapi.json HTTP/1.1" 200
+2026-01-17 16:54:52,720 - deals_processor.api.auth - INFO - auth.py:128 - Login attempt for email: admin@default.com
+2026-01-17 16:54:53,187 - deals_processor.api.auth - INFO - auth.py:138 - User logged in successfully: admin@default.com
+2026-01-17 16:54:53,188 - uvicorn.access - INFO - 127.0.0.1:33250 - "POST /auth/login HTTP/1.1" 200
+2026-01-17 16:54:53,324 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:54:53,326 - uvicorn.access - INFO - 127.0.0.1:33260 - "GET /users HTTP/1.1" 200
+2026-01-17 16:55:00,287 - deals_processor.api.auth - INFO - auth.py:128 - Login attempt for email: admin@default.com
+2026-01-17 16:55:00,720 - deals_processor.api.auth - INFO - auth.py:138 - User logged in successfully: admin@default.com
+2026-01-17 16:55:00,720 - uvicorn.access - INFO - 127.0.0.1:33266 - "POST /auth/login HTTP/1.1" 200
+2026-01-17 16:55:00,841 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:55:00,842 - uvicorn.access - INFO - 127.0.0.1:33278 - "GET /users HTTP/1.1" 200
+2026-01-17 16:55:41,853 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 16:55:41,858 - uvicorn.access - INFO - 127.0.0.1:46932 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 16:55:41,862 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:55:41,864 - uvicorn.access - INFO - 127.0.0.1:46936 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:55:41,871 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 16:55:41,873 - uvicorn.access - INFO - 127.0.0.1:46932 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 16:55:41,877 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:55:41,878 - uvicorn.access - INFO - 127.0.0.1:46936 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:55:41,885 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 16:55:41,887 - uvicorn.access - INFO - 127.0.0.1:46932 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 16:55:41,972 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 16:55:41,974 - uvicorn.access - INFO - 127.0.0.1:46932 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 16:55:41,978 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 16:55:41,980 - uvicorn.access - INFO - 127.0.0.1:46936 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 16:55:41,986 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 16:55:41,987 - uvicorn.access - INFO - 127.0.0.1:46932 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 16:55:41,993 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 16:55:41,994 - uvicorn.access - INFO - 127.0.0.1:46936 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 16:55:41,999 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 16:55:42,001 - uvicorn.access - INFO - 127.0.0.1:46932 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 16:55:42,008 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 16:55:42,010 - uvicorn.access - INFO - 127.0.0.1:46936 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 16:55:42,015 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 16:55:42,016 - uvicorn.access - INFO - 127.0.0.1:46932 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 16:55:42,022 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 16:55:42,023 - uvicorn.access - INFO - 127.0.0.1:46936 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 16:55:42,028 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 16:55:42,030 - uvicorn.access - INFO - 127.0.0.1:46932 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 16:55:44,651 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:55:44,653 - uvicorn.access - INFO - 127.0.0.1:46932 - "GET /users HTTP/1.1" 200
+2026-01-17 16:55:44,657 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:55:44,659 - uvicorn.access - INFO - 127.0.0.1:46936 - "GET /users HTTP/1.1" 200
+2026-01-17 16:55:52,493 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:55:52,493 - uvicorn.access - INFO - 127.0.0.1:46956 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:55:52,495 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:55:52,497 - uvicorn.access - INFO - 127.0.0.1:46950 - "GET /users HTTP/1.1" 200
+2026-01-17 16:55:52,509 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:55:52,509 - uvicorn.access - INFO - 127.0.0.1:46974 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:55:52,514 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:55:52,516 - uvicorn.access - INFO - 127.0.0.1:46972 - "GET /users HTTP/1.1" 200
+2026-01-17 16:56:17,283 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:56:17,283 - uvicorn.access - INFO - 127.0.0.1:38206 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:56:17,287 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:56:17,287 - uvicorn.access - INFO - 127.0.0.1:38206 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:56:34,974 - uvicorn.access - INFO - 127.0.0.1:38220 - "OPTIONS /auth/login HTTP/1.1" 200
+2026-01-17 16:56:34,978 - deals_processor.api.auth - INFO - auth.py:128 - Login attempt for email: admin@default.com
+2026-01-17 16:56:35,295 - deals_processor.api.auth - INFO - auth.py:138 - User logged in successfully: admin@default.com
+2026-01-17 16:56:35,295 - uvicorn.access - INFO - 127.0.0.1:38220 - "POST /auth/login HTTP/1.1" 200
+2026-01-17 16:56:35,343 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 16:56:35,344 - uvicorn.access - INFO - 127.0.0.1:38220 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 16:56:35,348 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 16:56:35,349 - uvicorn.access - INFO - 127.0.0.1:38226 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 16:56:35,353 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 16:56:35,355 - uvicorn.access - INFO - 127.0.0.1:38220 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 16:56:35,365 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 16:56:35,367 - uvicorn.access - INFO - 127.0.0.1:38226 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 16:56:35,368 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 16:56:35,369 - uvicorn.access - INFO - 127.0.0.1:38220 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 16:56:35,379 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 16:56:35,380 - uvicorn.access - INFO - 127.0.0.1:38226 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 16:56:35,382 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 16:56:35,384 - uvicorn.access - INFO - 127.0.0.1:38220 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 16:56:35,389 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 16:56:35,390 - uvicorn.access - INFO - 127.0.0.1:38220 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 16:56:35,393 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 16:56:35,394 - uvicorn.access - INFO - 127.0.0.1:38226 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 16:56:35,398 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 16:56:35,399 - uvicorn.access - INFO - 127.0.0.1:38220 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 16:56:35,402 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 16:56:35,403 - uvicorn.access - INFO - 127.0.0.1:38226 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 16:56:35,448 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 16:56:35,449 - uvicorn.access - INFO - 127.0.0.1:38226 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 16:56:38,133 - uvicorn.access - INFO - 127.0.0.1:38226 - "OPTIONS /deals HTTP/1.1" 200
+2026-01-17 16:56:38,135 - uvicorn.access - INFO - 127.0.0.1:38220 - "OPTIONS /deals HTTP/1.1" 200
+2026-01-17 16:56:38,141 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 16:56:38,143 - uvicorn.access - INFO - 127.0.0.1:38220 - "GET /deals HTTP/1.1" 200
+2026-01-17 16:56:38,147 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 16:56:38,149 - uvicorn.access - INFO - 127.0.0.1:38226 - "GET /deals HTTP/1.1" 200
+2026-01-17 16:56:39,687 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:56:39,689 - uvicorn.access - INFO - 127.0.0.1:38226 - "GET /users HTTP/1.1" 200
+2026-01-17 16:56:39,692 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:56:39,694 - uvicorn.access - INFO - 127.0.0.1:38220 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:00,163 - uvicorn.access - INFO - 127.0.0.1:38904 - "OPTIONS /auth/me HTTP/1.1" 200
+2026-01-17 16:58:00,165 - uvicorn.access - INFO - 127.0.0.1:38916 - "OPTIONS /users HTTP/1.1" 200
+2026-01-17 16:58:00,166 - uvicorn.access - INFO - 127.0.0.1:38926 - "OPTIONS /users HTTP/1.1" 200
+2026-01-17 16:58:00,167 - uvicorn.access - INFO - 127.0.0.1:38928 - "OPTIONS /auth/me HTTP/1.1" 200
+2026-01-17 16:58:00,206 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:00,208 - uvicorn.access - INFO - 127.0.0.1:38916 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:00,223 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:00,235 - uvicorn.access - INFO - 127.0.0.1:38904 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:00,239 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:00,240 - uvicorn.access - INFO - 127.0.0.1:38926 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:00,254 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:00,255 - uvicorn.access - INFO - 127.0.0.1:38916 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:00,270 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:00,273 - uvicorn.access - INFO - 127.0.0.1:38904 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:00,610 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:00,611 - uvicorn.access - INFO - 127.0.0.1:38904 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:00,627 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:00,629 - uvicorn.access - INFO - 127.0.0.1:38916 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:00,631 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:00,632 - uvicorn.access - INFO - 127.0.0.1:38926 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:02,434 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:02,435 - uvicorn.access - INFO - 127.0.0.1:38926 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:02,447 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:02,450 - uvicorn.access - INFO - 127.0.0.1:38916 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:02,472 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:02,475 - uvicorn.access - INFO - 127.0.0.1:38904 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:02,480 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:02,487 - uvicorn.access - INFO - 127.0.0.1:38926 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:06,593 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:06,596 - uvicorn.access - INFO - 127.0.0.1:38926 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:06,607 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:06,608 - uvicorn.access - INFO - 127.0.0.1:38904 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:06,623 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:06,624 - uvicorn.access - INFO - 127.0.0.1:38926 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:06,630 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:06,632 - uvicorn.access - INFO - 127.0.0.1:38916 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:08,455 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:08,477 - uvicorn.access - INFO - 127.0.0.1:38916 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:08,502 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:08,503 - uvicorn.access - INFO - 127.0.0.1:38926 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:08,521 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:08,524 - uvicorn.access - INFO - 127.0.0.1:38904 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:08,558 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:08,559 - uvicorn.access - INFO - 127.0.0.1:38916 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:09,849 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:09,850 - uvicorn.access - INFO - 127.0.0.1:38926 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:09,851 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:09,853 - uvicorn.access - INFO - 127.0.0.1:38916 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:09,863 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:09,863 - uvicorn.access - INFO - 127.0.0.1:38942 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:09,868 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:09,872 - uvicorn.access - INFO - 127.0.0.1:38904 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:12,548 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:12,549 - uvicorn.access - INFO - 127.0.0.1:38942 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:12,551 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:12,554 - uvicorn.access - INFO - 127.0.0.1:38904 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:12,567 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:12,568 - uvicorn.access - INFO - 127.0.0.1:38926 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:12,581 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:12,584 - uvicorn.access - INFO - 127.0.0.1:38942 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:15,807 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:15,807 - uvicorn.access - INFO - 127.0.0.1:38926 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:15,816 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:15,819 - uvicorn.access - INFO - 127.0.0.1:38942 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:15,826 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:15,826 - uvicorn.access - INFO - 127.0.0.1:38904 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:15,832 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:15,842 - uvicorn.access - INFO - 127.0.0.1:38926 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:17,697 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:17,698 - uvicorn.access - INFO - 127.0.0.1:38904 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:17,712 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:17,714 - uvicorn.access - INFO - 127.0.0.1:38926 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:17,716 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:17,717 - uvicorn.access - INFO - 127.0.0.1:38942 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:17,725 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:17,727 - uvicorn.access - INFO - 127.0.0.1:38904 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:19,338 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:19,339 - uvicorn.access - INFO - 127.0.0.1:38926 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:19,350 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:19,352 - uvicorn.access - INFO - 127.0.0.1:38904 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:19,366 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:19,366 - uvicorn.access - INFO - 127.0.0.1:38942 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:19,381 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:19,383 - uvicorn.access - INFO - 127.0.0.1:38926 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:24,316 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:24,317 - uvicorn.access - INFO - 127.0.0.1:38942 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:24,319 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:24,321 - uvicorn.access - INFO - 127.0.0.1:38926 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:24,333 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:58:24,334 - uvicorn.access - INFO - 127.0.0.1:38904 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:58:24,339 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:24,341 - uvicorn.access - INFO - 127.0.0.1:38942 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:27,871 - deals_processor.api.auth - INFO - auth.py:128 - Login attempt for email: admin@default.com
+2026-01-17 16:58:28,472 - deals_processor.api.auth - INFO - auth.py:138 - User logged in successfully: admin@default.com
+2026-01-17 16:58:28,473 - uvicorn.access - INFO - 127.0.0.1:55094 - "POST /auth/login HTTP/1.1" 200
+2026-01-17 16:58:28,616 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:28,619 - uvicorn.access - INFO - 127.0.0.1:55104 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:49,842 - deals_processor.api.auth - INFO - auth.py:128 - Login attempt for email: admin@default.com
+2026-01-17 16:58:50,315 - deals_processor.api.auth - INFO - auth.py:138 - User logged in successfully: admin@default.com
+2026-01-17 16:58:50,315 - uvicorn.access - INFO - 127.0.0.1:43424 - "POST /auth/login HTTP/1.1" 200
+2026-01-17 16:58:50,386 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:50,388 - uvicorn.access - INFO - 127.0.0.1:43440 - "GET /users HTTP/1.1" 200
+2026-01-17 16:58:57,549 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:58:57,551 - uvicorn.access - INFO - 127.0.0.1:36880 - "GET /users HTTP/1.1" 200
+2026-01-17 16:59:49,102 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:59:49,103 - uvicorn.access - INFO - 127.0.0.1:54298 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:59:49,104 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:59:49,105 - uvicorn.access - INFO - 127.0.0.1:54294 - "GET /users HTTP/1.1" 200
+2026-01-17 16:59:49,113 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:59:49,113 - uvicorn.access - INFO - 127.0.0.1:54298 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:59:49,118 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:59:49,120 - uvicorn.access - INFO - 127.0.0.1:54294 - "GET /users HTTP/1.1" 200
+2026-01-17 16:59:52,416 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:59:52,417 - uvicorn.access - INFO - 127.0.0.1:54298 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:59:52,421 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:59:52,432 - uvicorn.access - INFO - 127.0.0.1:54294 - "GET /users HTTP/1.1" 200
+2026-01-17 16:59:52,436 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 16:59:52,437 - uvicorn.access - INFO - 127.0.0.1:54306 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 16:59:52,451 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:59:52,461 - uvicorn.access - INFO - 127.0.0.1:54298 - "GET /users HTTP/1.1" 200
+2026-01-17 16:59:55,130 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 16:59:55,132 - uvicorn.access - INFO - 127.0.0.1:53482 - "GET /users HTTP/1.1" 200
+2026-01-17 17:01:07,196 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:01:07,197 - uvicorn.access - INFO - 127.0.0.1:34860 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:01:07,222 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:01:07,223 - uvicorn.access - INFO - 127.0.0.1:34860 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:01:20,699 - uvicorn.access - INFO - 127.0.0.1:39888 - "OPTIONS /auth/login HTTP/1.1" 200
+2026-01-17 17:01:20,703 - deals_processor.api.auth - INFO - auth.py:128 - Login attempt for email: admin@default.com
+Password verification failed
+Failed login attempt for user: admin@default.com
+2026-01-17 17:01:21,072 - deals_processor.api.auth - WARNING - auth.py:142 - Login failed - invalid credentials: admin@default.com
+2026-01-17 17:01:21,073 - uvicorn.access - INFO - 127.0.0.1:39888 - "POST /auth/login HTTP/1.1" 401
+2026-01-17 17:01:27,892 - deals_processor.api.auth - INFO - auth.py:128 - Login attempt for email: admin@default.com
+2026-01-17 17:01:28,263 - deals_processor.api.auth - INFO - auth.py:138 - User logged in successfully: admin@default.com
+2026-01-17 17:01:28,264 - uvicorn.access - INFO - 127.0.0.1:39900 - "POST /auth/login HTTP/1.1" 200
+2026-01-17 17:01:28,331 - uvicorn.access - INFO - 127.0.0.1:39900 - "OPTIONS /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:01:28,335 - uvicorn.access - INFO - 127.0.0.1:39900 - "OPTIONS /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:01:28,341 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 17:01:28,342 - uvicorn.access - INFO - 127.0.0.1:39900 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:01:28,348 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 17:01:28,350 - uvicorn.access - INFO - 127.0.0.1:39900 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:01:28,353 - uvicorn.access - INFO - 127.0.0.1:39900 - "OPTIONS /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:01:28,360 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 17:01:28,362 - uvicorn.access - INFO - 127.0.0.1:39900 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:01:28,368 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 17:01:28,369 - uvicorn.access - INFO - 127.0.0.1:39900 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:01:28,372 - uvicorn.access - INFO - 127.0.0.1:39900 - "OPTIONS /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:01:28,375 - uvicorn.access - INFO - 127.0.0.1:39900 - "OPTIONS /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:01:28,380 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 17:01:28,381 - uvicorn.access - INFO - 127.0.0.1:39900 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:01:28,386 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 17:01:28,387 - uvicorn.access - INFO - 127.0.0.1:39900 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:01:28,390 - uvicorn.access - INFO - 127.0.0.1:39900 - "OPTIONS /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:01:28,394 - uvicorn.access - INFO - 127.0.0.1:39900 - "OPTIONS /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:01:28,399 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 17:01:28,401 - uvicorn.access - INFO - 127.0.0.1:39900 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:01:28,406 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 17:01:28,406 - uvicorn.access - INFO - 127.0.0.1:39900 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:01:28,409 - uvicorn.access - INFO - 127.0.0.1:39900 - "OPTIONS /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:01:28,415 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 17:01:28,416 - uvicorn.access - INFO - 127.0.0.1:39900 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:01:28,420 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 17:01:28,422 - uvicorn.access - INFO - 127.0.0.1:39900 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:01:28,424 - uvicorn.access - INFO - 127.0.0.1:39900 - "OPTIONS /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 17:01:28,431 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 17:01:28,432 - uvicorn.access - INFO - 127.0.0.1:39900 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 17:01:28,437 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 17:01:28,438 - uvicorn.access - INFO - 127.0.0.1:39900 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 17:01:29,874 - uvicorn.access - INFO - 127.0.0.1:39900 - "OPTIONS /deals HTTP/1.1" 200
+2026-01-17 17:01:29,875 - uvicorn.access - INFO - 127.0.0.1:56688 - "OPTIONS /deals HTTP/1.1" 200
+2026-01-17 17:01:29,881 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 17:01:29,883 - uvicorn.access - INFO - 127.0.0.1:56688 - "GET /deals HTTP/1.1" 200
+2026-01-17 17:01:29,887 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 17:01:29,888 - uvicorn.access - INFO - 127.0.0.1:39900 - "GET /deals HTTP/1.1" 200
+2026-01-17 17:01:31,854 - uvicorn.access - INFO - 127.0.0.1:39900 - "OPTIONS /users HTTP/1.1" 200
+2026-01-17 17:01:31,854 - uvicorn.access - INFO - 127.0.0.1:56688 - "OPTIONS /users HTTP/1.1" 200
+2026-01-17 17:01:31,859 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:01:31,860 - uvicorn.access - INFO - 127.0.0.1:56688 - "GET /users HTTP/1.1" 200
+2026-01-17 17:01:31,864 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:01:31,866 - uvicorn.access - INFO - 127.0.0.1:39900 - "GET /users HTTP/1.1" 200
+2026-01-17 17:01:39,485 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:01:39,486 - uvicorn.access - INFO - 127.0.0.1:34886 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:01:39,488 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:01:39,489 - uvicorn.access - INFO - 127.0.0.1:34870 - "GET /users HTTP/1.1" 200
+2026-01-17 17:01:39,499 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:01:39,500 - uvicorn.access - INFO - 127.0.0.1:34886 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:01:39,506 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:01:39,515 - uvicorn.access - INFO - 127.0.0.1:34870 - "GET /users HTTP/1.1" 200
+2026-01-17 17:02:10,000 - uvicorn.access - INFO - 127.0.0.1:56698 - "OPTIONS /auth/me HTTP/1.1" 200
+2026-01-17 17:02:10,003 - uvicorn.access - INFO - 127.0.0.1:56708 - "OPTIONS /auth/me HTTP/1.1" 200
+2026-01-17 17:02:10,007 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:02:10,009 - uvicorn.access - INFO - 127.0.0.1:56704 - "GET /users HTTP/1.1" 200
+2026-01-17 17:02:10,014 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:02:10,021 - uvicorn.access - INFO - 127.0.0.1:56708 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:02:10,026 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:02:10,036 - uvicorn.access - INFO - 127.0.0.1:56698 - "GET /users HTTP/1.1" 200
+2026-01-17 17:02:10,042 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:02:10,050 - uvicorn.access - INFO - 127.0.0.1:56704 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:02:10,059 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:02:10,060 - uvicorn.access - INFO - 127.0.0.1:58686 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:02:10,065 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:02:10,067 - uvicorn.access - INFO - 127.0.0.1:58702 - "GET /users HTTP/1.1" 200
+2026-01-17 17:02:10,081 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:02:10,082 - uvicorn.access - INFO - 127.0.0.1:58686 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:02:10,084 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:02:10,094 - uvicorn.access - INFO - 127.0.0.1:58702 - "GET /users HTTP/1.1" 200
+2026-01-17 17:02:17,484 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:02:17,486 - uvicorn.access - INFO - 127.0.0.1:46042 - "GET /users HTTP/1.1" 200
+2026-01-17 17:02:17,489 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:02:17,489 - uvicorn.access - INFO - 127.0.0.1:46030 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:02:17,503 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:02:17,503 - uvicorn.access - INFO - 127.0.0.1:46030 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:02:17,517 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:02:17,519 - uvicorn.access - INFO - 127.0.0.1:46042 - "GET /users HTTP/1.1" 200
+2026-01-17 17:03:05,393 - uvicorn.access - INFO - 127.0.0.1:46046 - "OPTIONS /users/3/role HTTP/1.1" 200
+2026-01-17 17:03:05,408 - deals_processor.api.users - INFO - users.py:158 - Admin admin@default.com changed testuser@example.com role from analyst to partner
+2026-01-17 17:03:05,409 - uvicorn.access - INFO - 127.0.0.1:46046 - "PUT /users/3/role HTTP/1.1" 200
+2026-01-17 17:03:09,672 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:03:09,673 - uvicorn.access - INFO - 127.0.0.1:46044 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:03:09,675 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:03:09,676 - uvicorn.access - INFO - 127.0.0.1:46046 - "GET /users HTTP/1.1" 200
+2026-01-17 17:03:09,684 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:03:09,684 - uvicorn.access - INFO - 127.0.0.1:46044 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:03:09,690 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:03:09,691 - uvicorn.access - INFO - 127.0.0.1:46046 - "GET /users HTTP/1.1" 200
+2026-01-17 17:03:26,157 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:03:26,159 - uvicorn.access - INFO - 127.0.0.1:42916 - "GET /users HTTP/1.1" 200
+2026-01-17 17:03:26,160 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:03:26,160 - uvicorn.access - INFO - 127.0.0.1:42918 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:03:26,165 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:03:26,165 - uvicorn.access - INFO - 127.0.0.1:42918 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:03:26,168 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:03:26,169 - uvicorn.access - INFO - 127.0.0.1:42916 - "GET /users HTTP/1.1" 200
+2026-01-17 17:03:51,146 - uvicorn.access - INFO - 127.0.0.1:46198 - "OPTIONS /users/1/role HTTP/1.1" 200
+2026-01-17 17:03:51,181 - deals_processor.api.users - INFO - users.py:158 - Admin admin@default.com changed user1@example.com role from user to partner
+2026-01-17 17:03:51,182 - uvicorn.access - INFO - 127.0.0.1:46198 - "PUT /users/1/role HTTP/1.1" 200
+2026-01-17 17:04:02,833 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:04:02,834 - uvicorn.access - INFO - 127.0.0.1:46210 - "GET /users HTTP/1.1" 200
+2026-01-17 17:04:02,839 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:04:02,839 - uvicorn.access - INFO - 127.0.0.1:46210 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:04:02,844 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:04:02,845 - uvicorn.access - INFO - 127.0.0.1:46210 - "GET /users HTTP/1.1" 200
+2026-01-17 17:04:02,848 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:04:02,848 - uvicorn.access - INFO - 127.0.0.1:46210 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:05:55,239 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:05:55,241 - uvicorn.access - INFO - 127.0.0.1:39354 - "GET /users HTTP/1.1" 200
+2026-01-17 17:05:55,244 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:05:55,245 - uvicorn.access - INFO - 127.0.0.1:39362 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:05:55,272 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:05:55,273 - uvicorn.access - INFO - 127.0.0.1:39362 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:05:55,277 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:05:55,289 - uvicorn.access - INFO - 127.0.0.1:39354 - "GET /users HTTP/1.1" 200
+2026-01-17 17:05:59,118 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:05:59,119 - uvicorn.access - INFO - 127.0.0.1:39362 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:05:59,121 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:05:59,123 - uvicorn.access - INFO - 127.0.0.1:39354 - "GET /users HTTP/1.1" 200
+2026-01-17 17:05:59,127 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:05:59,127 - uvicorn.access - INFO - 127.0.0.1:39370 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:05:59,132 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:05:59,134 - uvicorn.access - INFO - 127.0.0.1:39362 - "GET /users HTTP/1.1" 200
+2026-01-17 17:06:12,186 - deals_processor.api.users - INFO - users.py:158 - Admin admin@default.com changed user1@example.com role from user to partner
+2026-01-17 17:06:12,186 - uvicorn.access - INFO - 127.0.0.1:39378 - "PUT /users/1/role HTTP/1.1" 200
+2026-01-17 17:06:29,304 - deals_processor.api.users - INFO - users.py:158 - Admin admin@default.com changed user1@example.com role from user to partner
+2026-01-17 17:06:29,305 - uvicorn.access - INFO - 127.0.0.1:39386 - "PUT /users/1/role HTTP/1.1" 200
+2026-01-17 17:06:35,433 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:06:35,435 - uvicorn.access - INFO - 127.0.0.1:39386 - "GET /users HTTP/1.1" 200
+2026-01-17 17:06:35,447 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:06:35,447 - uvicorn.access - INFO - 127.0.0.1:39386 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:06:35,458 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:06:35,462 - uvicorn.access - INFO - 127.0.0.1:39386 - "GET /users HTTP/1.1" 200
+2026-01-17 17:06:35,468 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:06:35,468 - uvicorn.access - INFO - 127.0.0.1:39386 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:06:41,682 - deals_processor.api.users - INFO - users.py:158 - Admin admin@default.com changed user1@example.com role from user to partner
+2026-01-17 17:06:41,683 - uvicorn.access - INFO - 127.0.0.1:45136 - "PUT /users/1/role HTTP/1.1" 200
+2026-01-17 17:07:06,002 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:07:06,004 - uvicorn.access - INFO - 127.0.0.1:45158 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:07:06,006 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:07:06,015 - uvicorn.access - INFO - 127.0.0.1:45144 - "GET /users HTTP/1.1" 200
+2026-01-17 17:07:06,039 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:07:06,040 - uvicorn.access - INFO - 127.0.0.1:45158 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:07:06,045 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:07:06,053 - uvicorn.access - INFO - 127.0.0.1:45144 - "GET /users HTTP/1.1" 200
+2026-01-17 17:07:14,416 - deals_processor.api.users - INFO - users.py:158 - Admin admin@default.com changed user1@example.com role from user to partner
+2026-01-17 17:07:14,417 - uvicorn.access - INFO - 127.0.0.1:58140 - "PUT /users/1/role HTTP/1.1" 200
+2026-01-17 17:07:24,552 - deals_processor.api.users - INFO - users.py:158 - Admin admin@default.com changed user1@example.com role from user to partner
+2026-01-17 17:07:24,553 - uvicorn.access - INFO - 127.0.0.1:58148 - "PUT /users/1/role HTTP/1.1" 200
+2026-01-17 17:07:45,084 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:07:45,086 - uvicorn.access - INFO - 127.0.0.1:58450 - "GET /users HTTP/1.1" 200
+2026-01-17 17:07:55,997 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:07:55,999 - uvicorn.access - INFO - 127.0.0.1:58466 - "GET /users HTTP/1.1" 200
+2026-01-17 17:07:56,005 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:07:56,006 - uvicorn.access - INFO - 127.0.0.1:58466 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:07:56,014 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:07:56,015 - uvicorn.access - INFO - 127.0.0.1:58466 - "GET /users HTTP/1.1" 200
+2026-01-17 17:07:56,022 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:07:56,022 - uvicorn.access - INFO - 127.0.0.1:58466 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:08:07,723 - uvicorn.access - INFO - 127.0.0.1:45188 - "OPTIONS /users HTTP/1.1" 200
+2026-01-17 17:08:07,724 - uvicorn.access - INFO - 127.0.0.1:45204 - "OPTIONS /auth/me HTTP/1.1" 200
+2026-01-17 17:08:07,725 - uvicorn.access - INFO - 127.0.0.1:45216 - "OPTIONS /users HTTP/1.1" 200
+2026-01-17 17:08:07,731 - uvicorn.access - INFO - 127.0.0.1:45188 - "OPTIONS /auth/me HTTP/1.1" 200
+2026-01-17 17:08:07,747 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:08:07,747 - uvicorn.access - INFO - 127.0.0.1:45216 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:08:07,750 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:08:07,752 - uvicorn.access - INFO - 127.0.0.1:45188 - "GET /users HTTP/1.1" 200
+2026-01-17 17:08:07,756 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:08:07,757 - uvicorn.access - INFO - 127.0.0.1:45204 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:08:07,769 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:08:07,771 - uvicorn.access - INFO - 127.0.0.1:45216 - "GET /users HTTP/1.1" 200
+2026-01-17 17:08:24,652 - deals_processor.api.users - INFO - users.py:158 - Admin admin@default.com changed user1@example.com role from user to admin
+2026-01-17 17:08:24,652 - uvicorn.access - INFO - 127.0.0.1:39384 - "PUT /users/1/role HTTP/1.1" 200
+2026-01-17 17:08:29,439 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:08:29,440 - uvicorn.access - INFO - 127.0.0.1:39384 - "GET /users HTTP/1.1" 200
+2026-01-17 17:08:29,914 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:08:29,915 - uvicorn.access - INFO - 127.0.0.1:39384 - "GET /users HTTP/1.1" 200
+2026-01-17 17:09:23,390 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:09:23,390 - uvicorn.access - INFO - 127.0.0.1:48064 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:09:23,400 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:09:23,401 - uvicorn.access - INFO - 127.0.0.1:48066 - "GET /users HTTP/1.1" 200
+2026-01-17 17:09:23,417 - deals_processor.api.auth - INFO - auth.py:225 - User profile requested: 6
+2026-01-17 17:09:23,417 - uvicorn.access - INFO - 127.0.0.1:48064 - "GET /auth/me HTTP/1.1" 200
+2026-01-17 17:09:23,431 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:09:23,433 - uvicorn.access - INFO - 127.0.0.1:48066 - "GET /users HTTP/1.1" 200
+2026-01-17 17:09:24,132 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:09:24,134 - uvicorn.access - INFO - 127.0.0.1:48104 - "GET /users HTTP/1.1" 200
+2026-01-17 17:09:24,141 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:09:24,142 - uvicorn.access - INFO - 127.0.0.1:48104 - "GET /users HTTP/1.1" 200
+2026-01-17 17:09:24,149 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:09:24,150 - uvicorn.access - INFO - 127.0.0.1:48104 - "GET /users HTTP/1.1" 200
+2026-01-17 17:09:24,158 - deals_processor.api.users - INFO - users.py:72 - Admin admin@default.com retrieved user list (6 users)
+2026-01-17 17:09:24,159 - uvicorn.access - INFO - 127.0.0.1:48104 - "GET /users HTTP/1.1" 200
+2026-01-17 17:09:26,946 - uvicorn.access - INFO - 127.0.0.1:48104 - "OPTIONS /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:09:26,947 - uvicorn.access - INFO - 127.0.0.1:48106 - "OPTIONS /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:09:26,956 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 17:09:26,958 - uvicorn.access - INFO - 127.0.0.1:48106 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:09:26,963 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 17:09:26,964 - uvicorn.access - INFO - 127.0.0.1:48104 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:09:26,965 - uvicorn.access - INFO - 127.0.0.1:48106 - "OPTIONS /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:09:26,974 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 17:09:26,976 - uvicorn.access - INFO - 127.0.0.1:48106 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:09:26,980 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 17:09:26,981 - uvicorn.access - INFO - 127.0.0.1:48104 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:09:26,982 - uvicorn.access - INFO - 127.0.0.1:48106 - "OPTIONS /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:09:26,989 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 17:09:26,991 - uvicorn.access - INFO - 127.0.0.1:48106 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:09:26,995 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 17:09:26,997 - uvicorn.access - INFO - 127.0.0.1:48104 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:09:26,998 - uvicorn.access - INFO - 127.0.0.1:48106 - "OPTIONS /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:09:27,004 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 17:09:27,005 - uvicorn.access - INFO - 127.0.0.1:48106 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:09:27,010 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 17:09:27,011 - uvicorn.access - INFO - 127.0.0.1:48104 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:09:27,012 - uvicorn.access - INFO - 127.0.0.1:48106 - "OPTIONS /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:09:27,020 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 17:09:27,021 - uvicorn.access - INFO - 127.0.0.1:48106 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:09:27,026 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 17:09:27,027 - uvicorn.access - INFO - 127.0.0.1:48104 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:09:27,029 - uvicorn.access - INFO - 127.0.0.1:48106 - "OPTIONS /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 17:09:27,037 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 17:09:27,038 - uvicorn.access - INFO - 127.0.0.1:48106 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 17:09:27,043 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 17:09:27,044 - uvicorn.access - INFO - 127.0.0.1:48104 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 17:09:29,220 - uvicorn.access - INFO - 127.0.0.1:48104 - "OPTIONS /deals/6/move HTTP/1.1" 200
+Validation error: [{'type': 'enum', 'loc': ('body', 'stage'), 'msg': "Input should be 'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'", 'input': 3, 'ctx': {'expected': "'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'"}}]
+2026-01-17 17:09:29,231 - uvicorn.access - INFO - 127.0.0.1:48104 - "POST /deals/6/move HTTP/1.1" 422
+Validation error: [{'type': 'enum', 'loc': ('body', 'stage'), 'msg': "Input should be 'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'", 'input': 3, 'ctx': {'expected': "'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'"}}]
+2026-01-17 17:09:31,383 - uvicorn.access - INFO - 127.0.0.1:48104 - "POST /deals/6/move HTTP/1.1" 422
+Validation error: [{'type': 'enum', 'loc': ('body', 'stage'), 'msg': "Input should be 'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'", 'input': 3, 'ctx': {'expected': "'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'"}}]
+2026-01-17 17:09:33,306 - uvicorn.access - INFO - 127.0.0.1:48104 - "POST /deals/6/move HTTP/1.1" 422
+Validation error: [{'type': 'enum', 'loc': ('body', 'stage'), 'msg': "Input should be 'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'", 'input': 3, 'ctx': {'expected': "'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'"}}]
+2026-01-17 17:09:35,646 - uvicorn.access - INFO - 127.0.0.1:48104 - "POST /deals/6/move HTTP/1.1" 422
+2026-01-17 17:09:37,422 - deals_processor.api.deals - INFO - deals.py:291 - Move deal 6 to DealStage.SCREEN by user 6
+2026-01-17 17:09:37,461 - uvicorn.access - INFO - 127.0.0.1:48104 - "POST /deals/6/move HTTP/1.1" 200
+2026-01-17 17:09:49,942 - uvicorn.access - INFO - 127.0.0.1:48120 - "OPTIONS /deals HTTP/1.1" 200
+2026-01-17 17:09:49,951 - uvicorn.access - INFO - 127.0.0.1:48132 - "OPTIONS /deals HTTP/1.1" 200
+2026-01-17 17:09:49,955 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 17:09:49,956 - uvicorn.access - INFO - 127.0.0.1:48120 - "GET /deals HTTP/1.1" 200
+2026-01-17 17:09:49,960 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 17:09:49,961 - uvicorn.access - INFO - 127.0.0.1:48132 - "GET /deals HTTP/1.1" 200
+2026-01-17 17:09:54,148 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 17:09:54,149 - uvicorn.access - INFO - 127.0.0.1:48132 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:09:54,153 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 17:09:54,154 - uvicorn.access - INFO - 127.0.0.1:48120 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:09:54,161 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 17:09:54,163 - uvicorn.access - INFO - 127.0.0.1:48132 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:09:54,166 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 17:09:54,168 - uvicorn.access - INFO - 127.0.0.1:48120 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:09:54,171 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 17:09:54,172 - uvicorn.access - INFO - 127.0.0.1:48132 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:09:54,175 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 17:09:54,177 - uvicorn.access - INFO - 127.0.0.1:48120 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:09:54,181 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 17:09:54,182 - uvicorn.access - INFO - 127.0.0.1:48132 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:09:54,185 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 17:09:54,185 - uvicorn.access - INFO - 127.0.0.1:48120 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:09:54,187 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 17:09:54,188 - uvicorn.access - INFO - 127.0.0.1:48132 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:09:54,191 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 17:09:54,193 - uvicorn.access - INFO - 127.0.0.1:48120 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:09:54,195 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 17:09:54,196 - uvicorn.access - INFO - 127.0.0.1:48132 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 17:09:54,199 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 17:09:54,199 - uvicorn.access - INFO - 127.0.0.1:48120 - "GET /deals/stage/Passed HTTP/1.1" 200
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:45,385 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:45,385 - uvicorn.access - INFO - 127.0.0.1:47392 - "POST /deals/6/move HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:46,120 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:46,122 - uvicorn.access - INFO - 127.0.0.1:47392 - "POST /deals/6/move HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:46,718 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:46,719 - uvicorn.access - INFO - 127.0.0.1:47392 - "POST /deals/6/move HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:47,057 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:47,057 - uvicorn.access - INFO - 127.0.0.1:47392 - "POST /deals/6/move HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:48,326 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:48,326 - uvicorn.access - INFO - 127.0.0.1:47392 - "POST /deals/6/move HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:48,955 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:48,956 - uvicorn.access - INFO - 127.0.0.1:47392 - "POST /deals/6/move HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:53,051 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:53,051 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:53,055 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:53,055 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:57,437 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:57,437 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals/stage/Sourced HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:57,445 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:57,445 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals/stage/Sourced HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:57,449 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:57,449 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals/stage/Screen HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:57,452 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:57,453 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals/stage/Screen HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:57,455 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:57,455 - uvicorn.access - INFO - 127.0.0.1:47404 - "GET /deals/stage/Diligence HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:57,458 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:57,459 - uvicorn.access - INFO - 127.0.0.1:47404 - "GET /deals/stage/Diligence HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:57,461 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:57,462 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals/stage/IC HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:57,464 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:57,465 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals/stage/IC HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:57,467 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:57,468 - uvicorn.access - INFO - 127.0.0.1:47404 - "GET /deals/stage/Invested HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:57,470 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:57,470 - uvicorn.access - INFO - 127.0.0.1:47404 - "GET /deals/stage/Invested HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:57,472 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:57,472 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals/stage/Passed HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:11:57,475 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:11:57,476 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals/stage/Passed HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:12:00,450 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:12:00,451 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:12:00,452 - uvicorn.access - INFO - 127.0.0.1:47404 - "GET /auth/me HTTP/1.1" 401
+2026-01-17 17:12:00,452 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals/stage/Sourced HTTP/1.1" 401
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:12:00,455 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+Expired token detected
+Error validating token: Signature has expired
+2026-01-17 17:12:00,457 - deals_processor.core.security - WARNING - security.py:87 - Token validation failed: Invalid token
+2026-01-17 17:12:00,457 - uvicorn.access - INFO - 127.0.0.1:47404 - "GET /auth/me HTTP/1.1" 401
+2026-01-17 17:12:00,458 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals/stage/Sourced HTTP/1.1" 401
+2026-01-17 17:12:00,462 - deals_processor.core.security - WARNING - security.py:65 - Missing or invalid Authorization header
+2026-01-17 17:12:00,463 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals/stage/Screen HTTP/1.1" 401
+2026-01-17 17:12:00,490 - deals_processor.core.security - WARNING - security.py:65 - Missing or invalid Authorization header
+2026-01-17 17:12:00,490 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals/stage/Screen HTTP/1.1" 401
+2026-01-17 17:12:00,492 - deals_processor.core.security - WARNING - security.py:65 - Missing or invalid Authorization header
+2026-01-17 17:12:00,492 - uvicorn.access - INFO - 127.0.0.1:47404 - "GET /deals/stage/Diligence HTTP/1.1" 401
+2026-01-17 17:12:00,503 - deals_processor.core.security - WARNING - security.py:65 - Missing or invalid Authorization header
+2026-01-17 17:12:00,503 - deals_processor.core.security - WARNING - security.py:65 - Missing or invalid Authorization header
+2026-01-17 17:12:00,504 - uvicorn.access - INFO - 127.0.0.1:47404 - "GET /deals/stage/Diligence HTTP/1.1" 401
+2026-01-17 17:12:00,504 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals/stage/IC HTTP/1.1" 401
+2026-01-17 17:12:00,509 - deals_processor.core.security - WARNING - security.py:65 - Missing or invalid Authorization header
+2026-01-17 17:12:00,510 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals/stage/IC HTTP/1.1" 401
+2026-01-17 17:12:00,512 - deals_processor.core.security - WARNING - security.py:65 - Missing or invalid Authorization header
+2026-01-17 17:12:00,512 - uvicorn.access - INFO - 127.0.0.1:47404 - "GET /deals/stage/Invested HTTP/1.1" 401
+2026-01-17 17:12:00,516 - deals_processor.core.security - WARNING - security.py:65 - Missing or invalid Authorization header
+2026-01-17 17:12:00,516 - uvicorn.access - INFO - 127.0.0.1:47404 - "GET /deals/stage/Invested HTTP/1.1" 401
+2026-01-17 17:12:00,518 - deals_processor.core.security - WARNING - security.py:65 - Missing or invalid Authorization header
+2026-01-17 17:12:00,518 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals/stage/Passed HTTP/1.1" 401
+2026-01-17 17:12:00,521 - deals_processor.core.security - WARNING - security.py:65 - Missing or invalid Authorization header
+2026-01-17 17:12:00,521 - uvicorn.access - INFO - 127.0.0.1:47392 - "GET /deals/stage/Passed HTTP/1.1" 401
+2026-01-17 17:12:16,960 - uvicorn.access - INFO - 127.0.0.1:46258 - "OPTIONS /auth/login HTTP/1.1" 200
+2026-01-17 17:12:16,964 - deals_processor.api.auth - INFO - auth.py:128 - Login attempt for email: admin@default.com
+2026-01-17 17:12:17,208 - deals_processor.api.auth - INFO - auth.py:138 - User logged in successfully: admin@default.com
+2026-01-17 17:12:17,208 - uvicorn.access - INFO - 127.0.0.1:46258 - "POST /auth/login HTTP/1.1" 200
+2026-01-17 17:12:17,291 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 17:12:17,292 - uvicorn.access - INFO - 127.0.0.1:46258 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:12:17,296 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 17:12:17,297 - uvicorn.access - INFO - 127.0.0.1:46264 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:12:17,300 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 17:12:17,301 - uvicorn.access - INFO - 127.0.0.1:46258 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:12:17,305 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 17:12:17,307 - uvicorn.access - INFO - 127.0.0.1:46264 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:12:17,310 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 17:12:17,311 - uvicorn.access - INFO - 127.0.0.1:46258 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:12:17,315 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 17:12:17,317 - uvicorn.access - INFO - 127.0.0.1:46264 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:12:17,320 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 17:12:17,321 - uvicorn.access - INFO - 127.0.0.1:46258 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:12:17,326 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 17:12:17,327 - uvicorn.access - INFO - 127.0.0.1:46264 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:12:17,332 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 17:12:17,333 - uvicorn.access - INFO - 127.0.0.1:46258 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:12:17,336 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 17:12:17,337 - uvicorn.access - INFO - 127.0.0.1:46264 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:12:17,343 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 17:12:17,344 - uvicorn.access - INFO - 127.0.0.1:46258 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 17:12:17,348 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 17:12:17,349 - uvicorn.access - INFO - 127.0.0.1:46264 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 17:12:21,457 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 17:12:21,458 - uvicorn.access - INFO - 127.0.0.1:46264 - "GET /deals HTTP/1.1" 200
+2026-01-17 17:12:21,462 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 17:12:21,463 - uvicorn.access - INFO - 127.0.0.1:46258 - "GET /deals HTTP/1.1" 200
+2026-01-17 17:12:27,370 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 17:12:27,370 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:12:27,375 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 17:12:27,376 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:12:27,380 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 17:12:27,381 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:12:27,385 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 17:12:27,385 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:12:27,389 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 17:12:27,389 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:12:27,392 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 17:12:27,393 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:12:27,396 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 17:12:27,397 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:12:27,399 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 17:12:27,400 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:12:27,403 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 17:12:27,403 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:12:27,406 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 17:12:27,407 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:12:27,410 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 17:12:27,410 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 17:12:27,413 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 17:12:27,414 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 17:12:30,947 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 17:12:30,948 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals HTTP/1.1" 200
+2026-01-17 17:12:30,951 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 17:12:30,952 - uvicorn.access - INFO - 127.0.0.1:36838 - "GET /deals HTTP/1.1" 200
+2026-01-17 17:12:33,525 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 17:12:33,526 - uvicorn.access - INFO - 127.0.0.1:36838 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:12:33,530 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 17:12:33,531 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:12:33,534 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 17:12:33,537 - uvicorn.access - INFO - 127.0.0.1:36838 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:12:33,543 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 17:12:33,544 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:12:33,546 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 17:12:33,547 - uvicorn.access - INFO - 127.0.0.1:36838 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:12:33,550 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 17:12:33,552 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:12:33,554 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 17:12:33,556 - uvicorn.access - INFO - 127.0.0.1:36838 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:12:33,559 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 17:12:33,560 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:12:33,563 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 17:12:33,564 - uvicorn.access - INFO - 127.0.0.1:36838 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:12:33,567 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 17:12:33,568 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:12:33,570 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 17:12:33,571 - uvicorn.access - INFO - 127.0.0.1:36838 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 17:12:33,575 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 17:12:33,576 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 17:12:38,436 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 17:12:38,437 - uvicorn.access - INFO - 127.0.0.1:36836 - "GET /deals HTTP/1.1" 200
+2026-01-17 17:12:38,441 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 17:12:38,442 - uvicorn.access - INFO - 127.0.0.1:36838 - "GET /deals HTTP/1.1" 200
+2026-01-17 17:12:54,326 - uvicorn.access - INFO - 127.0.0.1:47196 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404
+2026-01-17 17:13:10,451 - deals_processor.api.auth - INFO - auth.py:128 - Login attempt for email: admin@deafult.com
+Login attempt with non-existent email: admin@deafult.com
+2026-01-17 17:13:10,453 - deals_processor.api.auth - WARNING - auth.py:142 - Login failed - invalid credentials: admin@deafult.com
+2026-01-17 17:13:10,453 - uvicorn.access - INFO - 127.0.0.1:47198 - "POST /auth/login HTTP/1.1" 401
+2026-01-17 17:13:25,780 - deals_processor.api.auth - INFO - auth.py:128 - Login attempt for email: admin@default.com
+2026-01-17 17:13:26,037 - deals_processor.api.auth - INFO - auth.py:138 - User logged in successfully: admin@default.com
+2026-01-17 17:13:26,037 - uvicorn.access - INFO - 127.0.0.1:33938 - "POST /auth/login HTTP/1.1" 200
+2026-01-17 17:13:46,151 - deals_processor.api.deals - INFO - deals.py:399 - Get activities for deal 6 requested by user: 6
+2026-01-17 17:13:46,155 - uvicorn.access - INFO - 127.0.0.1:33952 - "GET /deals/6/activities?skip=0&limit=50 HTTP/1.1" 200
+2026-01-17 17:14:19,700 - deals_processor.api.deals - INFO - deals.py:399 - Get activities for deal 6 requested by user: 6
+2026-01-17 17:14:19,701 - uvicorn.access - INFO - 127.0.0.1:52358 - "GET /deals/6/activities?skip=0&limit=50 HTTP/1.1" 200
+2026-01-17 17:14:38,052 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 17:14:38,053 - uvicorn.access - INFO - 127.0.0.1:58358 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:14:38,061 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 17:14:38,062 - uvicorn.access - INFO - 127.0.0.1:58358 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:14:38,069 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 17:14:38,071 - uvicorn.access - INFO - 127.0.0.1:58358 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:14:38,079 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 17:14:38,081 - uvicorn.access - INFO - 127.0.0.1:58358 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:14:38,087 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 17:14:38,088 - uvicorn.access - INFO - 127.0.0.1:58358 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:14:38,094 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 17:14:38,095 - uvicorn.access - INFO - 127.0.0.1:58358 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:14:38,101 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 17:14:38,102 - uvicorn.access - INFO - 127.0.0.1:58358 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:14:38,108 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 17:14:38,109 - uvicorn.access - INFO - 127.0.0.1:58358 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:14:38,114 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 17:14:38,114 - uvicorn.access - INFO - 127.0.0.1:58358 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:14:38,119 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 17:14:38,120 - uvicorn.access - INFO - 127.0.0.1:58358 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:14:38,124 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 17:14:38,125 - uvicorn.access - INFO - 127.0.0.1:58358 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 17:14:38,128 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 17:14:38,129 - uvicorn.access - INFO - 127.0.0.1:58358 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 17:14:42,382 - uvicorn.access - INFO - 127.0.0.1:58358 - "OPTIONS /deals/2/move HTTP/1.1" 200
+Validation error: [{'type': 'enum', 'loc': ('body', 'stage'), 'msg': "Input should be 'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'", 'input': 2, 'ctx': {'expected': "'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'"}}]
+2026-01-17 17:14:42,394 - uvicorn.access - INFO - 127.0.0.1:58358 - "POST /deals/2/move HTTP/1.1" 422
+Validation error: [{'type': 'enum', 'loc': ('body', 'stage'), 'msg': "Input should be 'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'", 'input': 2, 'ctx': {'expected': "'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'"}}]
+2026-01-17 17:14:44,129 - uvicorn.access - INFO - 127.0.0.1:58358 - "POST /deals/2/move HTTP/1.1" 422
+Validation error: [{'type': 'enum', 'loc': ('body', 'stage'), 'msg': "Input should be 'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'", 'input': 2, 'ctx': {'expected': "'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'"}}]
+2026-01-17 17:14:44,462 - uvicorn.access - INFO - 127.0.0.1:58358 - "POST /deals/2/move HTTP/1.1" 422
+Validation error: [{'type': 'enum', 'loc': ('body', 'stage'), 'msg': "Input should be 'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'", 'input': 2, 'ctx': {'expected': "'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'"}}]
+2026-01-17 17:14:44,629 - uvicorn.access - INFO - 127.0.0.1:58358 - "POST /deals/2/move HTTP/1.1" 422
+Validation error: [{'type': 'enum', 'loc': ('body', 'stage'), 'msg': "Input should be 'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'", 'input': 4, 'ctx': {'expected': "'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'"}}]
+2026-01-17 17:14:45,638 - uvicorn.access - INFO - 127.0.0.1:58358 - "POST /deals/2/move HTTP/1.1" 422
+Validation error: [{'type': 'enum', 'loc': ('body', 'stage'), 'msg': "Input should be 'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'", 'input': 4, 'ctx': {'expected': "'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'"}}]
+2026-01-17 17:14:47,586 - uvicorn.access - INFO - 127.0.0.1:58358 - "POST /deals/2/move HTTP/1.1" 422
+2026-01-17 17:14:49,803 - uvicorn.access - INFO - 127.0.0.1:58358 - "OPTIONS /deals/4/move HTTP/1.1" 200
+Validation error: [{'type': 'enum', 'loc': ('body', 'stage'), 'msg': "Input should be 'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'", 'input': 5, 'ctx': {'expected': "'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'"}}]
+2026-01-17 17:14:49,808 - uvicorn.access - INFO - 127.0.0.1:58358 - "POST /deals/4/move HTTP/1.1" 422
+2026-01-17 17:14:51,975 - deals_processor.api.deals - INFO - deals.py:291 - Move deal 4 to DealStage.SOURCED by user 6
+2026-01-17 17:14:52,010 - uvicorn.access - INFO - 127.0.0.1:58358 - "POST /deals/4/move HTTP/1.1" 200
+Validation error: [{'type': 'enum', 'loc': ('body', 'stage'), 'msg': "Input should be 'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'", 'input': 4, 'ctx': {'expected': "'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'"}}]
+2026-01-17 17:14:56,514 - uvicorn.access - INFO - 127.0.0.1:58358 - "POST /deals/4/move HTTP/1.1" 422
+Validation error: [{'type': 'enum', 'loc': ('body', 'stage'), 'msg': "Input should be 'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'", 'input': 4, 'ctx': {'expected': "'Sourced', 'Screen', 'Diligence', 'IC', 'Invested' or 'Passed'"}}]
+2026-01-17 17:14:57,113 - uvicorn.access - INFO - 127.0.0.1:58358 - "POST /deals/4/move HTTP/1.1" 422
+2026-01-17 17:14:59,469 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 17:14:59,469 - uvicorn.access - INFO - 127.0.0.1:58358 - "GET /deals HTTP/1.1" 200
+2026-01-17 17:14:59,478 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 17:14:59,479 - uvicorn.access - INFO - 127.0.0.1:58374 - "GET /deals HTTP/1.1" 200
+2026-01-17 17:15:09,946 - deals_processor.api.deals - INFO - deals.py:399 - Get activities for deal 4 requested by user: 6
+2026-01-17 17:15:09,948 - uvicorn.access - INFO - 127.0.0.1:52366 - "GET /deals/4/activities?skip=0&limit=50 HTTP/1.1" 200
+2026-01-17 17:15:27,152 - deals_processor.api.auth - INFO - auth.py:128 - Login attempt for email: admin@default.com
+2026-01-17 17:15:27,423 - deals_processor.api.auth - INFO - auth.py:138 - User logged in successfully: admin@default.com
+2026-01-17 17:15:27,424 - uvicorn.access - INFO - 127.0.0.1:37488 - "POST /auth/login HTTP/1.1" 200
+2026-01-17 17:15:27,436 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 17:15:27,437 - uvicorn.access - INFO - 127.0.0.1:37496 - "GET /deals HTTP/1.1" 200
+2026-01-17 17:15:27,493 - deals_processor.api.deals - INFO - deals.py:291 - Move deal 1 to DealStage.SCREEN by user 6
+2026-01-17 17:15:27,520 - uvicorn.access - INFO - 127.0.0.1:37504 - "POST /deals/1/move HTTP/1.1" 200
+2026-01-17 17:15:42,456 - deals_processor.api.auth - INFO - auth.py:128 - Login attempt for email: admin@default.com
+2026-01-17 17:15:42,920 - deals_processor.api.auth - INFO - auth.py:138 - User logged in successfully: admin@default.com
+2026-01-17 17:15:42,920 - uvicorn.access - INFO - 127.0.0.1:58372 - "POST /auth/login HTTP/1.1" 200
+2026-01-17 17:15:42,938 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 17:15:42,940 - uvicorn.access - INFO - 127.0.0.1:58378 - "GET /deals HTTP/1.1" 200
+2026-01-17 17:15:43,049 - deals_processor.api.deals - INFO - deals.py:291 - Move deal 1 to DealStage.SCREEN by user 6
+2026-01-17 17:15:43,051 - uvicorn.access - INFO - 127.0.0.1:58386 - "POST /deals/1/move HTTP/1.1" 400
+2026-01-17 17:15:55,773 - deals_processor.api.auth - INFO - auth.py:128 - Login attempt for email: admin@default.com
+2026-01-17 17:15:56,222 - deals_processor.api.auth - INFO - auth.py:138 - User logged in successfully: admin@default.com
+2026-01-17 17:15:56,223 - uvicorn.access - INFO - 127.0.0.1:43400 - "POST /auth/login HTTP/1.1" 200
+2026-01-17 17:15:56,244 - deals_processor.api.deals - INFO - deals.py:291 - Move deal 1 to DealStage.DILIGENCE by user 6
+2026-01-17 17:15:56,279 - uvicorn.access - INFO - 127.0.0.1:43408 - "POST /deals/1/move HTTP/1.1" 200
+2026-01-17 17:16:07,772 - deals_processor.api.auth - INFO - auth.py:128 - Login attempt for email: admin@default.com
+2026-01-17 17:16:08,199 - deals_processor.api.auth - INFO - auth.py:138 - User logged in successfully: admin@default.com
+2026-01-17 17:16:08,199 - uvicorn.access - INFO - 127.0.0.1:40398 - "POST /auth/login HTTP/1.1" 200
+2026-01-17 17:16:08,218 - deals_processor.api.deals - INFO - deals.py:291 - Move deal 1 to DealStage.DILIGENCE by user 6
+2026-01-17 17:16:08,220 - uvicorn.access - INFO - 127.0.0.1:40400 - "POST /deals/1/move HTTP/1.1" 400
+2026-01-17 17:16:17,485 - deals_processor.api.auth - INFO - auth.py:128 - Login attempt for email: admin@default.com
+2026-01-17 17:16:17,994 - deals_processor.api.auth - INFO - auth.py:138 - User logged in successfully: admin@default.com
+2026-01-17 17:16:17,994 - uvicorn.access - INFO - 127.0.0.1:42674 - "POST /auth/login HTTP/1.1" 200
+2026-01-17 17:16:18,044 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 17:16:18,046 - uvicorn.access - INFO - 127.0.0.1:42680 - "GET /deals HTTP/1.1" 200
+2026-01-17 17:16:28,196 - deals_processor.api.deals - INFO - deals.py:399 - Get activities for deal 4 requested by user: 6
+2026-01-17 17:16:28,198 - uvicorn.access - INFO - 127.0.0.1:59696 - "GET /deals/4/activities?skip=0&limit=50 HTTP/1.1" 200
+2026-01-17 17:16:32,928 - deals_processor.api.deals - INFO - deals.py:170 - List deals requested by user: 6
+2026-01-17 17:16:32,929 - uvicorn.access - INFO - 127.0.0.1:59710 - "GET /deals HTTP/1.1" 200
+2026-01-17 17:16:44,230 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 17:16:44,231 - uvicorn.access - INFO - 127.0.0.1:40932 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:16:44,236 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Sourced' requested by user: 6
+2026-01-17 17:16:44,237 - uvicorn.access - INFO - 127.0.0.1:40932 - "GET /deals/stage/Sourced HTTP/1.1" 200
+2026-01-17 17:16:44,243 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 17:16:44,244 - uvicorn.access - INFO - 127.0.0.1:40932 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:16:44,249 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Screen' requested by user: 6
+2026-01-17 17:16:44,251 - uvicorn.access - INFO - 127.0.0.1:40932 - "GET /deals/stage/Screen HTTP/1.1" 200
+2026-01-17 17:16:44,255 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 17:16:44,256 - uvicorn.access - INFO - 127.0.0.1:40932 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:16:44,260 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Diligence' requested by user: 6
+2026-01-17 17:16:44,261 - uvicorn.access - INFO - 127.0.0.1:40932 - "GET /deals/stage/Diligence HTTP/1.1" 200
+2026-01-17 17:16:44,266 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 17:16:44,267 - uvicorn.access - INFO - 127.0.0.1:40932 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:16:44,271 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'IC' requested by user: 6
+2026-01-17 17:16:44,272 - uvicorn.access - INFO - 127.0.0.1:40932 - "GET /deals/stage/IC HTTP/1.1" 200
+2026-01-17 17:16:44,276 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 17:16:44,277 - uvicorn.access - INFO - 127.0.0.1:40932 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:16:44,281 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Invested' requested by user: 6
+2026-01-17 17:16:44,282 - uvicorn.access - INFO - 127.0.0.1:40932 - "GET /deals/stage/Invested HTTP/1.1" 200
+2026-01-17 17:16:44,287 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 17:16:44,288 - uvicorn.access - INFO - 127.0.0.1:40932 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 17:16:44,293 - deals_processor.api.deals - INFO - deals.py:325 - Get deals by stage 'Passed' requested by user: 6
+2026-01-17 17:16:44,295 - uvicorn.access - INFO - 127.0.0.1:40932 - "GET /deals/stage/Passed HTTP/1.1" 200
+2026-01-17 17:16:50,038 - deals_processor.api.deals - INFO - deals.py:291 - Move deal 2 to DealStage.DILIGENCE by user 6
+2026-01-17 17:16:50,069 - uvicorn.access - INFO - 127.0.0.1:44610 - "POST /deals/2/move HTTP/1.1" 200
+2026-01-17 17:17:20,717 - deals_processor.api.deals - INFO - deals.py:291 - Move deal 6 to DealStage.IC by user 6
+2026-01-17 17:17:20,755 - uvicorn.access - INFO - 127.0.0.1:40946 - "POST /deals/6/move HTTP/1.1" 200
+2026-01-17 17:17:48,905 - deals_processor.api.deals - INFO - deals.py:291 - Move deal 3 to DealStage.DILIGENCE by user 6
+2026-01-17 17:17:48,938 - uvicorn.access - INFO - 127.0.0.1:40362 - "POST /deals/3/move HTTP/1.1" 200
+2026-01-17 17:19:02,270 - uvicorn.error - INFO - Shutting down
+2026-01-17 17:19:02,409 - uvicorn.error - INFO - Waiting for application shutdown.
+2026-01-17 17:19:02,494 - uvicorn.error - INFO - Application shutdown complete.
+2026-01-17 17:19:02,507 - uvicorn.error - INFO - Finished server process [55495]
